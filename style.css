@@ -27,7 +27,9 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
 /* Index */
 .sections { list-style: none; padding: 0; }
 .sections li { margin-bottom: 10px; }
-.sections li.head h2 { margin: 24px 0 8px; }
+/* margin, not padding: margins are truncated at the top of a column break, so both columns start flush */
+.sections li.head h2 { margin: 48px 0 8px; }
+.grid section:first-child li.head h2 { margin-top: 0; }
 .sections li.head { margin-bottom: 10px; }
 .sections a { font-size: 19px; }
 .sections small { display: block; }
@@ -57,8 +59,4 @@ table.t th { font-weight: bold; }
   .grid { column-count: 2; column-gap: 40px; }
   .grid section { margin-bottom: 8px; }
   .grid li { break-inside: avoid; }
-  .grid section:first-child h2 { margin-top: 32px; }
-  .grid section > h2 { margin-top: 24px; }
-  .grid { margin-top: 8px; }
-  .grid section:first-child h2, .grid section > h2 { margin-top: 0; padding-top: 24px; }
 }
