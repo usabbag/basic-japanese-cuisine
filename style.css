@@ -9,8 +9,8 @@ body {
 }
 /* Size 1: titles. Size 2: body. Size 3: meta. */
 h1 { font-size: 30px; line-height: 1.2; margin: 0 0 20px; font-weight: bold; }
-h2 { font-size: 19px; margin: 32px 0 8px; font-weight: bold; text-transform: uppercase; letter-spacing: .04em; }
-h3 { font-size: 19px; margin: 20px 0 6px; font-weight: bold; }
+h2 { font-size: 19px; margin: 32px 0 8px; font-weight: bold; text-transform: uppercase; letter-spacing: .04em; color: var(--gray); }
+h3 { font-size: 19px; margin: 20px 0 6px; font-weight: bold; color: var(--gray); }
 p, ul, ol { margin: 0 0 12px; }
 ul, ol { padding-left: 22px; }
 li { margin-bottom: 4px; }
