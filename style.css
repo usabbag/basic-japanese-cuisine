@@ -1,0 +1,58 @@
+/* Sushi memo — minimal stylesheet. Three sizes, black/white, blue accent. */
+:root { --blue: #0044cc; --gray: #666; --rule: #ddd; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px; line-height: 1.5; color: #000; background: #fff;
+  margin: 0; padding: 20px 16px 60px; max-width: 748px; margin-inline: auto;
+}
+/* Size 1: titles. Size 2: body. Size 3: meta. */
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 20px; font-weight: bold; }
+h2 { font-size: 17px; margin: 32px 0 8px; font-weight: bold; text-transform: uppercase; letter-spacing: .04em; }
+h3 { font-size: 17px; margin: 20px 0 6px; font-weight: bold; }
+p, ul, ol { margin: 0 0 12px; }
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 4px; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+small, .meta, .src { font-size: 13px; color: var(--gray); }
+.src { margin-left: 6px; white-space: nowrap; }
+nav.top { font-size: 13px; margin-bottom: 24px; }
+nav.top a + a::before { content: " / "; color: var(--gray); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
+/* Index */
+.sections { list-style: none; padding: 0; }
+.sections li { margin-bottom: 10px; }
+.sections a { font-size: 17px; }
+.sections small { display: block; }
+/* Added (not in course material) */
+.added { border-left: 3px solid var(--rule); padding-left: 10px; color: var(--gray); }
+.added::before { content: "Not in course material — "; font-size: 13px; }
+/* Recipes with scaler */
+.recipe { border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 20px; }
+.recipe .scale { font-size: 13px; color: var(--gray); margin-bottom: 8px; }
+.recipe .scale input, .recipe .scale select { font: inherit; font-size: 17px; padding: 2px 6px; border: 1px solid #999; border-radius: 0; color: #000; background: #fff; }
+.recipe .scale input { width: 5em; }
+.recipe table { border-collapse: collapse; width: 100%; margin-bottom: 10px; }
+.recipe td { padding: 3px 0; vertical-align: top; }
+.recipe td.q { text-align: right; white-space: nowrap; padding-right: 10px; width: 7em; font-variant-numeric: tabular-nums; }
+/* Plain data tables */
+table.t { border-collapse: collapse; width: 100%; font-size: 13px; margin-bottom: 12px; }
+table.t th, table.t td { text-align: left; padding: 4px 6px 4px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.t th { font-weight: bold; }
+.todo { color: var(--blue); }
+
+/* Desktop: wider, two-column lists to break verticality */
+@media (min-width: 700px) {
+  body { padding: 40px 24px 80px; }
+  .cols { column-count: 2; column-gap: 32px; }
+  .cols li { break-inside: avoid; }
+  /* Home page: sections flow in two columns */
+  .grid { column-count: 2; column-gap: 40px; }
+  .grid section { break-inside: avoid; margin-bottom: 8px; }
+  .grid section:first-child h2 { margin-top: 32px; }
+  .grid section > h2 { margin-top: 24px; }
+  .grid { margin-top: 8px; }
+  .grid section:first-child h2, .grid section > h2 { margin-top: 0; padding-top: 24px; }
+}

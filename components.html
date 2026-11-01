@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components — Basic Japanese Cuisine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">Basic Japanese Cuisine</a></nav>
+
+<h1>Components<br><small>stock, simmered fillings, pickles, garnish</small></h1>
+<p class="meta">Sources: handouts and boards photographed in class, class notes, <a href="videos/9-2.mp4">video 9-2</a>, <a href="videos/9-3.mp4">9-3</a>, <a href="videos/7-1.mp4">7-1</a>, <a href="videos/7-2.mp4">7-2</a>. <span class="todo">Draft.</span></p>
+
+<div class="recipe" id="dashi" data-base="2">
+<h2>Kongō dashi <small>混合出汁 · kombu + katsuobushi</small></h2>
+<p class="scale">Water <input class="n" type="number" value="2" min="0.1" step="0.5"> L</p>
+<table>
+<tr><td class="q"><span data-q="2">2</span> L</td><td>water — soft water is best<span class="src">notes</span></td></tr>
+<tr><td class="q"><span data-q="20">20</span> g</td><td>kombu — 1% of the water<span class="src">handout</span></td></tr>
+<tr><td class="q"><span data-q="40">40</span> g</td><td>katsuobushi — 2% of the water<span class="src">handout</span></td></tr>
+</table>
+<p class="meta">Video says 20 g kombu for ~2 L and “a big handful” of bonito; Kansai uses more kombu, Kanto more bonito.<span class="src">video 9-2</span></p>
+<h3>Ichiban dashi</h3>
+<ol>
+  <li>Rinse the kombu quickly. Start in cold water. (Restaurants: in the fridge the night before.)<span class="src">video 9-2</span></li>
+  <li>Heat to 65–70 °C and hold; kombu gives up most flavour there. Up to 30 min for thick kombu. <b>Never boil.</b> Lift the kombu out before the boil.<span class="src">video 9-2</span></li>
+  <li>Notes version: at 80 °C (bubbles on the bottom) remove the kombu.<span class="src">notes 21 Oct</span></li>
+  <li>Raise to 90 °C, add all the katsuobushi at once, go to ~95 °C, switch off.<span class="src">video 9-2</span> Steep 3 min<span class="src">notes</span> — the video says ~10 min, until the flakes sink.<span class="src">video 9-2</span></li>
+  <li>Strain through paper in a zaru. <b>Do not squeeze</b> — bitterness (egumi).<span class="src">video 9-2</span></li>
+</ol>
+<h3>Niban dashi</h3>
+<ol>
+  <li>Used kombu + used bonito in cold water, about half the first amount of water.<span class="src">video 9-2</span></li>
+  <li>Medium heat to just before the boil; lift the kombu out alone (sliminess). Then low heat, gentle simmer 5 min. Optionally a second charge of fresh bonito (oigatsuo). Strain, no squeezing.<span class="src">video 9-2</span></li>
+</ol>
+<h3>Kombu types <small>(tasted 21 Oct)</small></h3>
+<table class="t">
+<tr><th>Type</th><th>School</th><th>My taste</th></tr>
+<tr><td>Ma</td><td>rich, elegant; Osaka; udon, takoyaki. Glutamate-rich.</td><td>smokier, stronger</td></tr>
+<tr><td>Hidaka</td><td>mild, cheapest, used in Tokyo</td><td>fishier, all over the place</td></tr>
+<tr><td>Rishiri</td><td>clean, refined; Kyoto</td><td>rounder, best</td></tr>
+<tr><td>Rausu</td><td>strongest, richest; not for clear soup; expensive; ramen. Glutamate-rich.</td><td>herbaceous, stronger</td></tr>
+</table>
+<ul>
+  <li>Oboro kombu: 70–80 °C.<span class="src">notes</span></li>
+  <li>Spent kombu: freeze, or shred for tsukudani.<span class="src">video 9-2</span></li>
+  <li>Umami: glutamic acid (kombu), inosinic acid (bonito), guanylic acid (dried shiitake).<span class="src">handout</span></li>
+</ul>
+</div>
+
+<div class="recipe" id="osuimono" data-base="1000">
+<h2>Osuimono <small>お吸い物 · clear soup</small></h2>
+<p class="scale">Dashi <input class="n" type="number" value="1000" min="50" step="100"> ml</p>
+<table>
+<tr><td class="q"><span data-q="1000">1000</span> ml</td><td>dashi</td></tr>
+<tr><td class="q"><span data-q="20">20</span> g</td><td>light soy</td></tr>
+<tr><td class="q"><span data-q="2">2</span>–<span data-q="3">3</span> g</td><td>salt</td></tr>
+</table>
+<p class="meta">Board 21 Oct.<span class="src">board</span> The printed handout gives a per-bowl version: stock 90 cc, sake 10 g, light soy 20 cc, salt (no amount printed).<span class="src">handout</span></p>
+</div>
+
+<div class="recipe" id="kanpyo" data-base="250">
+<h2>Kanpyo <small>かんぴょう · simmered gourd strips</small></h2>
+<p class="scale">Dried kanpyo <input class="n" type="number" value="250" min="10" step="50"> g</p>
+<table>
+<tr><td class="q"><span data-q="250">250</span> g</td><td>dried kanpyo</td></tr>
+<tr><td class="q"><span data-q="540">540</span> ml</td><td>dark soy</td></tr>
+<tr><td class="q"><span data-q="50">50</span> ml</td><td>sake</td></tr>
+<tr><td class="q"><span data-q="600">600</span> g</td><td>sugar</td></tr>
+<tr><td class="q"><span data-q="50">50</span> ml</td><td>mirin</td></tr>
+</table>
+<ol>
+  <li>Rub with salt, wash.</li>
+  <li>Boil 20–30 min. Drain.</li>
+  <li>Cook in the liquid 15–20 min.<span class="src">board 16 Oct</span></li>
+</ol>
+<p class="meta">Hosomaki: 3–4 strings ≈ 10 g per roll.<span class="src">board</span></p>
+</div>
+
+<div class="recipe" id="shiitake" data-base="250">
+<h2>Ni-shiitake <small>煮椎茸 · simmered shiitake</small></h2>
+<p class="scale">Dried shiitake <input class="n" type="number" value="250" min="10" step="50"> g</p>
+<table>
+<tr><td class="q"><span data-q="250">250</span> g</td><td>dried shiitake</td></tr>
+<tr><td class="q"><span data-q="540">540</span> ml</td><td>shiitake soaking water</td></tr>
+<tr><td class="q"><span data-q="360">360</span> ml</td><td>water</td></tr>
+<tr><td class="q"><span data-q="360">360</span> ml</td><td>dark soy</td></tr>
+<tr><td class="q"><span data-q="500">500</span> g</td><td>sugar</td></tr>
+<tr><td class="q"><span data-q="45">45</span> ml</td><td>mirin</td></tr>
+</table>
+<ol>
+  <li>Soak in water overnight.<span class="src">board</span> Strain the soaking liquid through paper; it's the stock.<span class="src">video 9-3</span></li>
+  <li>Seasonings into the soaking liquid, add shiitake. Skim the scum that rises at the first boil only.<span class="src">video 9-3</span></li>
+  <li>Simmer on medium, thick-bottomed pot, until the liquid is gone — 60 min.<span class="src">board · video 9-3</span></li>
+  <li>At the end drizzle mirin over to glaze, one more blast of heat. Cool on a flat bamboo tray.<span class="src">video 9-3</span></li>
+</ol>
+<p class="meta">For chirashi and futomaki. Freezes well in portions; move to the fridge the day before use.<span class="src">video 9-3</span></p>
+</div>
+
+<div class="recipe" id="inari" data-base="30">
+<h2>Inari <small>いなり · seasoned fried-tofu pockets</small></h2>
+<p class="scale">Aburaage <input class="n" type="number" value="30" min="1" step="5"> sheets (= <span data-q="60">60</span> pockets)</p>
+<table>
+<tr><td class="q"><span data-q="2000">2000</span> ml</td><td>water</td></tr>
+<tr><td class="q"><span data-q="100">100</span> ml</td><td>sake</td></tr>
+<tr><td class="q"><span data-q="250">250</span> ml</td><td>dark soy</td></tr>
+<tr><td class="q"><span data-q="350">350</span> g</td><td>sugar</td></tr>
+<tr><td class="q"><span data-q="150">150</span> ml</td><td>mirin</td></tr>
+</table>
+<ol>
+  <li>Cut and open.</li>
+  <li>Boil 10 min. Drain.</li>
+  <li>Cook in the liquid 15 min.<span class="src">board 16 Oct</span></li>
+</ol>
+</div>
+
+<div class="recipe" id="gari" data-base="350">
+<h2>Gari <small>ガリ · pickled ginger</small></h2>
+<p class="scale">New ginger <input class="n" type="number" value="350" min="10" step="50"> g</p>
+<table>
+<tr><td class="q"><span data-q="350">350</span> g</td><td>new (young) ginger</td></tr>
+<tr><td class="q"><span data-q="200">200</span> cc</td><td>water</td></tr>
+<tr><td class="q"><span data-q="100">100</span> cc</td><td>vinegar</td></tr>
+<tr><td class="q"><span data-q="50">50</span> g</td><td>sugar</td></tr>
+<tr><td class="q"><span data-q="10">10</span> g</td><td>salt</td></tr>
+</table>
+<ol>
+  <li>Young ginger; old ginger is spicier and harder. Peel with a spoon; trim the pink offshoots and dry ends.<span class="src">notes 20 Oct</span></li>
+  <li>Slice parallel to the fibres, 1 mm.<span class="src">notes</span></li>
+  <li>3% salt water, 10 min.<span class="src">handout · notes</span></li>
+  <li>Drain; boil in plain water 5 min (counted from the return to the boil).<span class="src">handout · notes</span></li>
+  <li>Marinate in the vinegar liquid.<span class="src">handout</span></li>
+</ol>
+<ul>
+  <li>Keeps 1 month in water, 1 year in vinegar.<span class="src">notes</span></li>
+  <li>Same method works with green papaya / palm heart.<span class="src">notes</span></li>
+</ul>
+</div>
+
+<h2 id="tamago">Tamago <small>玉子焼き · sushi omelette</small></h2>
+<p class="meta">Curriculum day 15 (23 Oct). <b>No recipe or ratio was recorded</b> — only cuts.</p>
+<ul>
+  <li>1 cm wide for nigiri.<span class="src">notes</span></li>
+  <li>2 cm wide for appetizer, then cut in half.<span class="src">notes</span></li>
+  <li>Rabbit cut: 4 cm wide, pierce the middle, diagonal incision, flip 180°, again.<span class="src">notes</span></li>
+</ul>
+
+<h2 id="tsuma">Tsuma <small>つま · sashimi garnish</small></h2>
+<h3>Daikon</h3>
+<ol>
+  <li>Usuba grip: middle, ring and little fingers hold; index on the spine when cutting, on the side when peeling.<span class="src">video 7-1</span></li>
+  <li>Katsura-muki: first peel thick to make a clean cylinder (mentori), then peel thin. Thumb is the pivot; knife moves up and down; cut only on the upward stroke. Eyes on the top edge of the daikon.<span class="src">video 7-1</span></li>
+  <li>Roll the sheet, fold in half, trim the sides, julienne. Knife moves diagonally forward, not straight down.<span class="src">video 7-1</span></li>
+  <li>Rinse in running water — removes the smell, makes it crisp.<span class="src">video 7-1 · 8-1</span></li>
+  <li>Store wrapped in a wrung-out wet paper towel, in a bag or lidded container, fridge.<span class="src">video 8-1 · 7-2</span></li>
+</ol>
+<h3>Cucumber, carrot</h3>
+<ul>
+  <li>Cucumber: katsura-muki using only the layer between skin and seeds; julienne with the daikon for two-colour tsuma.<span class="src">video 7-2</span></li>
+  <li>Yori-ninjin: carrot sheet cut diagonally in 2–3 mm strips, optionally two slits down the middle, wrapped round a chopstick to twist.<span class="src">video 7-2</span></li>
+</ul>
+
+<hr>
+<p class="meta">Related: <a href="sauces.html">Sauces</a> · <a href="sushi.html">Sushi</a> · <a href="dishes.html">Dishes</a></p>
+<script src="scale.js"></script>
+</body>
+</html>
