@@ -20,10 +20,15 @@ small, .meta, .src { font-size: 15px; color: var(--gray); }
 .src { margin-left: 6px; white-space: nowrap; }
 nav.top { font-size: 15px; margin-bottom: 24px; }
 nav.top a + a::before { content: " / "; color: var(--gray); }
+nav.toc { font-size: 15px; line-height: 1.7; margin: 0 0 24px; padding: 10px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+nav.toc a { white-space: nowrap; }
+h2 { scroll-margin-top: 12px; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 28px 0; }
 /* Index */
 .sections { list-style: none; padding: 0; }
 .sections li { margin-bottom: 10px; }
+.sections li.head h2 { margin: 24px 0 8px; }
+.sections li.head { margin-bottom: 10px; }
 .sections a { font-size: 19px; }
 .sections small { display: block; }
 /* Added (not in course material) */
@@ -50,7 +55,8 @@ table.t th { font-weight: bold; }
   .cols li { break-inside: avoid; }
   /* Home page: sections flow in two columns */
   .grid { column-count: 2; column-gap: 40px; }
-  .grid section { break-inside: avoid; margin-bottom: 8px; }
+  .grid section { margin-bottom: 8px; }
+  .grid li { break-inside: avoid; }
   .grid section:first-child h2 { margin-top: 32px; }
   .grid section > h2 { margin-top: 24px; }
   .grid { margin-top: 8px; }
